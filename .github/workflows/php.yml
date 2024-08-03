@@ -1,4 +1,4 @@
-name: "HiN Miner"
+name: "EMAD Miner"
 
 on:
   workflow_dispatch:

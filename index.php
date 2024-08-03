@@ -477,8 +477,8 @@ function ping($host, $port, $timeout) {
 }
 
 function generateHiddifyTags() {
-    $profileTitle = base64_encode("HiN Miner 🫧");
-    return "#profile-title: base64:{$profileTitle}\n#profile-update-interval: 1\n#subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531\n#support-url: https://hingroup.t.me\n#profile-web-page-url: https://Here_is_Nowhere.t.me
+    $profileTitle = base64_encode("EMAD Miner 🤖");
+    return "#profile-title: base64:{$profileTitle}\n#profile-update-interval: 1\n#subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531\n#support-url: https://hingroup.t.me\n#profile-web-page-url: https://Emadgraphic.t.me
 ";
 }
 
@@ -558,11 +558,11 @@ function generateUpdateTime() {
 }
 
 function generateEndofConfiguration() {
-    return "vless://acbabca-acab-bcaa-abdc-bbccaabaccab@127.0.0.1:8080?security=tls&type=tcp#👨🏻‍💻%20DEVELOPED-BY%20@YEBEKHE\nvless://acbabca-acab-bcaa-abdc-bbccaabaccab@127.0.0.1:8080?security=tls&type=tcp#📌%20SUPPORT-CONTACT @HiNGROUP.T.ME";
+    return "vless://acbabca-acab-bcaa-abdc-bbccaabaccab@127.0.0.1:8080?security=tls&type=tcp#👨🏻‍💻%20DEVELOPED-BY%20@EMAD\nvless://acbabca-acab-bcaa-abdc-bbccaabaccab@127.0.0.1:8080?security=tls&type=tcp#📌%20SUPPORT-CONTACT @Emadgraphic.T.ME";
 }
 
-$source = "EmadGraphic";
-$configsList = generateHiddifyTags() . "\n" . generateUpdateTime() . getTelegramChannelConfigs("EmadGraphic") . generateEndofConfiguration();
+$source = "EmadGraphic","v2ray_configs_pool";
+$configsList = generateHiddifyTags() . "\n" . generateUpdateTime() . getTelegramChannelConfigs($source) . generateEndofConfiguration();
 
 file_put_contents("Miner/normal", $configsList);
 file_put_contents("Miner/base64", base64_encode($configsList));

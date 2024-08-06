@@ -3,7 +3,7 @@ name: "EMAD Miner"
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '* */3 * * *'
 
 jobs:
   hin-full:
